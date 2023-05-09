@@ -86,7 +86,7 @@ CREATE TABLE hashtags (
 	title VARCHAR(20) NOT NULL UNIQUE
 )
 
-CREATE TABLE hastags_posts (
+CREATE TABLE hashtags_posts (
 	id SERIAL PRIMARY KEY,
 	
 	hashtag_id INTEGER NOT NULL REFERENCES hashtags(id) ON DELETE CASCADE,
